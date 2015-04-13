@@ -1,0 +1,42 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.pagefactory.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TechEx {
+
+	WebDriver driver = new FirefoxDriver();
+	
+	@Before
+	public void setUp() throws Exception {
+		driver.get("http://www.twitter.com");
+		WebElement username_input = driver.findElement(By.id("signin-email"));
+		username_input.sendKeys("thesandwichbar");
+		WebElement password_input = driver.findElement(By.id("signin-password"));
+		password_input.sendKeys("l0vinf33lin" + Keys.RETURN);
+			
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		driver.quit();
+	}
+
+	@Test
+	public void test() {
+		//driver.findElement(By.name("q")).sendKeys("Selenium 2.0 WebDriver");
+		//driver.findElement(By.name("q")).submit();
+		System.out.println("Page title is: " + driver.getTitle());
+	}
+
+}
+
+
+
