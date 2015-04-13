@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.arorarajan.interviewprep.codingbat.string3.notReplace&apos; to &apos;NotReplace&apos;&#x0A;- Original project: &apos;CodingPractice&apos;&#x0A;- Original element: &apos;com.arorarajan.interviewprep.codingbat.string3.notReplace&apos;&#x0A;- Renamed element: &apos;com.arorarajan.interviewprep.codingbat.string3.NotReplace&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;notReplace&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.arorarajan.interviewprep.codingbat.string3{notReplace.java[notReplace" matchStrategy="1" name="NotReplace" qualified="false" references="true" similarDeclarations="false" stamp="1414869846859" textual="false" version="1.0"/>
-</session>

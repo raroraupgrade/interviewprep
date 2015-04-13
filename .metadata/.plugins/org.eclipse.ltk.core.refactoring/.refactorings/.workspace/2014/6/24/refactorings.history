@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename Java project &apos;CBAT-String3-countTriple&apos; to &apos;CodingBat&apos;&#x0A;- Original element: &apos;CBAT-String3-countTriple&apos;&#x0A;- Renamed element: &apos;CBAT-String3-countTriple&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;CBAT-String3-countTriple&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=CBAT-String3-countTriple" name="CodingBat" references="true" stamp="1402772887512" version="1.0"/>
-</session>
