@@ -20,30 +20,33 @@ package com.arorarajan.interviewprep.codingbat.string3;
 /**
  * Problem Statement: http://codingbat.com/prob/p121193 Given a string, return the sum of the
  * numbers appearing in the string, ignoring all other characters. A number is a series of 1 or more
- * digit chars in a row. (Note: Character.isDigit(char) tests if a char is one of the chars '0',
- * '1', .. '9'. Integer.parseInt(string) converts a string to an int.)
+ * digit chars in a row.
  * 
- * sumNumbers("abc123xyz") -> 123
+ * sumOfNumbers("abc123xyz") -> 123
+ *
+ * Hints: 
+ * Character.isDigit(char) tests if a char is one of the chars '0', * '1', .. '9'.
+ * Integer.parseInt(string) converts a string to an int.
  * 
  * @author Rajan Arora
  * @since Jun 14, 2014
  */
 public class SumNumbers {
-    public int sumNumbers(String str) {
+    public int sumOfNumbers(String str) {
         String num = "";
-        int sumNumbers = 0;
+        int sumOfNumbers = 0;
         for (int i = 0; i < str.length(); i++) {
             if (Character.isDigit(str.charAt(i)))
                 num += str.charAt(i);
             else if (num.length() > 0) {
-                sumNumbers += Integer.parseInt(num);
+                sumOfNumbers += Integer.parseInt(num);
                 num = "";
             }
             else
                 num = "";
         }
         if (num.length() > 0)
-            sumNumbers += Integer.parseInt(num);
-        return sumNumbers;
+            sumOfNumbers += Integer.parseInt(num);
+        return sumOfNumbers;
     }
 }
